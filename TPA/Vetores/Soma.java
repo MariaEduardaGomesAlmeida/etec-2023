@@ -9,12 +9,12 @@ public class Soma {
 			b = new int[TAM];
 			c = new int[TAM];
 			
-			//la�o para ler vetor A
+			//laço para ler vetor A
 			for(i = 0; i<TAM; i++) {
 				System.out.println("Digite o "+(i+1)+"º valor de A:");
 				a[i] = sc.nextInt();
 			}
-			//la�o para ler vetor B
+			//laço para ler vetor B
 			for(i = 0; i<TAM; i++) {
 				System.out.println("Digite o "+(i+1)+"º valor de B:");
 				b[i] = sc.nextInt();
@@ -27,7 +27,7 @@ public class Soma {
 			}
 			System.out.print("]\n");
 			
-			//la�o apresentando b
+			//laço apresentando b
 			System.out.print("B [] = "+"[ ");
 			for(i = 0; i<TAM; i++) {
 				System.out.print(b[i]+" ");
