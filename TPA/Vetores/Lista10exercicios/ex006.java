@@ -4,98 +4,72 @@ public class ex006 {
 		Scanner sc = new Scanner(System.in);
 		
 		final int TAM = 10;
-		int a[], b[], c[], i, j, contInterseccao=0, contVetorC=0, contJ=0;
+		int a[], b[], c[], i, j, k=0, contInterseccao=0;
 		a = new int[TAM];
 		b = new int[TAM];
 		
 		
 		//lendo vetores
-		//vetor A
 		for(i=0; i<TAM; i++) {
-			System.out.println("Entre com o "+(i+1)+"º valor do vetor A:");
+			System.out.println("Entre com o "+(i+1)+"Âº valor do vetor A: ");
 			a[i] = sc.nextInt();
 		}
 		
-		//vetor B
 		for(i=0; i<TAM; i++) {
-			System.out.println("Entre com o "+(i+1)+"º valor do vetor B:");
+			System.out.println("Entre com o "+(i+1)+"Âº valor do vetor B: ");
 			b[i] = sc.nextInt();
 		}
 		
 		
-		//interseccao
+		//verificar se ha interseccao
 		for(i=0; i<TAM; i++) {
 			for(j=0; j<TAM; j++) {
-				if(a[i] == b[j]) {
+				if(a[i]==b[j]) {
 					contInterseccao++;
 				}
 			}
-			
 		}
 		
-		
-		//armazenamento dos valores que possuem interseccao
 		c = new int[contInterseccao];
 		
 		for(i=0; i<TAM; i++) {
 			for(j=0; j<TAM; j++) {
-				if(a[i] == b[j]) {
-					for(int atual : c) {
-						if(atual == a[i]) {
-							contVetorC++;
-						}
-					}
-					
-					
-					if(contVetorC==0) {
-						c[contJ] = a[i];
-						contJ++;
-					}
+				if(a[i]==b[j]) {
+					c[k] = a[i];
+					k++;
 				}
 			}
 		}
 		
-System.out.println("-----");
-		if(c.length==0) {
-		   System.out.println("Nenhum elemento teve intersecção. ");
-		} else {
-	       System.out.println("Os valores que possuem intersecção são: ");
-		
-		
-		   for(int interseccaoAtual : c) {
-			   interseccaoAtual++;
-		   }
-		
-		}
 		
 		//apresentando vetores
 		System.out.print("A = [ ");
 		for(i=0; i<TAM; i++) {
 			System.out.print(a[i]+" ");
 		}
-		System.out.println("]");
+		System.out.print("]\n");
 		
-		//vetor B
+		
+		
+		
 		System.out.print("B = [ ");
 		for(i=0; i<TAM; i++) {
 			System.out.print(b[i]+" ");
 		}
-		System.out.println("]");
-	
-		//vetor C
+		System.out.print("]\n");
+		
+		
+		
+		
+		System.out.println("Os elementos que contem intersecÃ§Ã£o sÃ£o:");
 		System.out.print("C = [ ");
-		for(i=0; i<=(c.length-1); i++) {
+		for(i=0; i<contInterseccao; i++) {
 			System.out.print(c[i]+" ");
 		}
-		System.out.println("]");
-				
+		System.out.print("]");
 		
 		
 		
-		
-		
-		
-		sc.close();
 		
 	}
 
