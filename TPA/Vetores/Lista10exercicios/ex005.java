@@ -12,7 +12,7 @@ public class ex005 {
 		
 		//lendo vetor a
 		for(i=0; i<TAM; i++) {
-			System.out.println("Entre com o "+(i+1)+"บ valor:");
+			System.out.println("Entre com o "+(i+1)+"ยบ valor:");
 			a[i] = sc.nextInt();
 		}
 
@@ -28,12 +28,13 @@ public class ex005 {
 			}
 			
 			System.out.println(a[i]+"! = "+fatorial);
+			b[i]=fatorial;
 		}
 		
 		
 		
 		
-		/*apresentando vetores
+		//apresentando vetores
 		System.out.print("A = [ ");
 		for(i=0; i<TAM; i++) {
 			System.out.print(a[i]+" ");
@@ -45,7 +46,7 @@ public class ex005 {
 		for(i=0; i<TAM; i++) {
 			System.out.print(b[i]+" ");
 		}
-		System.out.println("]");*/
+		System.out.println("]");
 		
 		
 	}
