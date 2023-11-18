@@ -9,22 +9,6 @@ public class ex004 {
 		
 		
 		
-		//ler vetor A e acrescentar vetor B		
-		for(i=0; i<TAM; i++) {
-			System.out.println("Entre com o "+(i+1)+"º valor:");
-			a[i] = sc.nextInt();
-		}
-		
-		
-		
-		//apresentando vetor A
-		System.out.print("A = [ ");
-		for(i=0; i<TAM; i++) {
-			System.out.print(a[i]+" ");
-		}
-		System.out.println("]");
-		
-		
 		for(i=0; i<TAM; i++) {
 			a[i] = (int) Math.pow(2, i);
 		}
