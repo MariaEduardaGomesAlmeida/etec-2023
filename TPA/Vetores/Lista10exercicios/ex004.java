@@ -10,7 +10,7 @@ public class ex004 {
 		
 		
 		for(i=0; i<TAM; i++) {
-			a[i] = (int) Math.pow(2, i);
+			a[i] = (2*2)*i;
 		}
 		
 		
