@@ -11,7 +11,7 @@ public class ex004 {
 		
 		//ler vetor A e acrescentar vetor B		
 		for(i=0; i<TAM; i++) {
-			System.out.println("Entre com o "+(i+1)+"บ valor:");
+			System.out.println("Entre com o "+(i+1)+"ยบ valor:");
 			a[i] = sc.nextInt();
 		}
 		
@@ -26,7 +26,7 @@ public class ex004 {
 		
 		
 		for(i=0; i<TAM; i++) {
-			a[i] = (2*2)*i;
+			a[i] = (int) Math.pow(2, i);
 		}
 		
 		
