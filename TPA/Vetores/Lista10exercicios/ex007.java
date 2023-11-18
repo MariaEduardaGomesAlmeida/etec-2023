@@ -12,17 +12,17 @@ public class ex007 {
         
         //lendo vetores
         for(i=0; i<TAM; i++) {
-			System.out.println("Entre com o "+(i+1)+"º valor do vetor A: ");
-			a[i] = sc.nextInt();
-		}
+	    System.out.println("Entre com o "+(i+1)+"º valor do vetor A: ");
+	    a[i] = sc.nextInt();
+	}
 		
-		for(i=0; i<TAM; i++) {
-			System.out.println("Entre com o "+(i+1)+"º valor do vetor B: ");
-			b[i] = sc.nextInt();
-		}
+ 	for(i=0; i<TAM; i++) {
+	    System.out.println("Entre com o "+(i+1)+"º valor do vetor B: ");
+	    b[i] = sc.nextInt();
+	}
 		
 		
-		//verificando diferenca dos vetores
+	//verificando diferenca dos vetores
 	        for (i = 0; i < TAM; i++) {
 	            boolean conjIguais = false;
 	            for (j = 0; j < TAM; j++) {
@@ -60,29 +60,29 @@ public class ex007 {
 	        //apresentando vetores
 	        
 	        System.out.print("A = [ ");
-			for(i=0; i<TAM; i++) {
-				System.out.print(a[i]+" ");
-			}
-			System.out.print("]\n");
+		for(i=0; i<TAM; i++) {
+		    System.out.print(a[i]+" ");
+		}
+		System.out.print("]\n");
 			
 			
 			
 			
-			System.out.print("B = [ ");
-			for(i=0; i<TAM; i++) {
-				System.out.print(b[i]+" ");
-			}
-			System.out.print("]\n");
+		System.out.print("B = [ ");
+		for(i=0; i<TAM; i++) {
+		     System.out.print(b[i]+" ");
+		}
+		System.out.print("]\n");
 			
 			
 	        
 	        
 	        System.out.println("Os elementos que estão no vetor A, mas não estão no  vetor B são:");
-			System.out.print("C = [ ");
-			for(i=0; i<diferenca; i++) {
-				System.out.print(c[i]+" ");
-			}
-			System.out.print("]");
+		System.out.print("C = [ ");
+		for(i=0; i<diferenca; i++) {
+		     System.out.print(c[i]+" ");
+		}
+		System.out.print("]");
 			
 	        
 	        
