@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class exe02 {
+public class ex002 {
 	public static void main(String[] args) {
 		
 		int matriz[][] = new int [3][3];
@@ -44,8 +44,8 @@ public class exe02 {
 		}
 		System.out.println();
 		
-		System.out.println("O maior número da matriz é: "+maior+" e está na linha "+(iMaior+1)+" e coluna "+(jMaior+1));
-		System.out.println("O menor número da matriz é: "+menor+" e está na linha "+(iMenor+1)+" e coluna "+(jMenor+1));
+		System.out.println("O maior nÃºmero da matriz Ã©: "+maior+" e estÃ¡ na linha "+(iMaior+1)+" e coluna "+(jMaior+1));
+		System.out.println("O menor nÃºmero da matriz Ã©: "+menor+" e estÃ¡ na linha "+(iMenor+1)+" e coluna "+(jMenor+1));
 		
 
 	}
