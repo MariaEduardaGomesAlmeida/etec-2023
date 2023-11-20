@@ -1,5 +1,5 @@
 import java.util.Random;
-public class exe01 {
+public class ex001 {
 	public static void main(String[] args) {
 		
 		
