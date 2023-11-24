@@ -1,5 +1,5 @@
 import java.util.Random;
-public class exe03 {
+public class ex003 {
 	public static void main(String[] args) {
 		Random random = new Random();
 		
